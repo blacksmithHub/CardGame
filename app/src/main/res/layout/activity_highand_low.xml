@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.libor.cardgame.HighandLow">
+
+    <ImageButton
+        android:id="@+id/btnRestart"
+        style="@style/image_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        app:srcCompat="@drawable/restart" />
+
+    <ImageView
+        android:id="@+id/player"
+        style="@style/image_btn"
+        android:layout_width="wrap_content"
+        android:layout_height= "200dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/unknowncard2"
+        android:layout_marginLeft="125dp"
+        android:layout_marginRight="125dp"
+        android:layout_marginTop="235dp"/>
+    <ImageView
+        android:id="@+id/computer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="125dp"
+        android:layout_marginBottom="300dp"
+        android:layout_marginRight="125dp"
+        app:srcCompat="@drawable/unknowncard1" />
+
+    <TextView
+        android:id="@+id/comp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:paddingLeft="240dp"
+        android:paddingTop="100dp"
+        android:text=" :Enemy's score"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/Background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="430dp"
+        android:scaleType="matrix"
+        app:srcCompat="@drawable/green" />
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="casual"
+        android:paddingLeft="20dp"
+        android:paddingTop="410dp"
+        android:text="Your score: "
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/character"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="230dp"
+        android:paddingTop="10dp"
+        app:srcCompat="@drawable/first" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="485dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/end"
+            android:layout_width="wrap_content"
+            style="@style/home_btn"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:text="End Game" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingTop="440dp">
+
+        <Button
+        android:id="@+id/high"
+            style="@style/home_btn"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="High" />
+
+        <Button
+            android:id="@+id/low"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            style="@style/home_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Low" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="80dp">
+
+        <Button
+            android:id="@+id/btnPLay"
+            android:layout_width="191dp"
+            style="@style/home_btn"
+            android:layout_height="wrap_content"
+            android:text="play"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>
